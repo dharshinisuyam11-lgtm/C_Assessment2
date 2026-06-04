@@ -1,19 +1,12 @@
 #include <stdio.h>
 int main() {
-    int a, ones, tens, hundreds, thousands, result;
+    int a, ones, tens, hundreds, thousands;
     printf("Enter a four-digit number: ");
     scanf("%d", &a);
     ones = a % 10;
     tens = (a / 10) % 10;
     hundreds = (a / 100) % 10;
     thousands = a / 1000;
-    if ((ones == hundreds) && (tens == thousands))
-    {
-        result = 1;
-    } else
-    {
-        result = 0;
-    }
-    printf("result = %d\n", result);
+    printf(" %d",(ones == hundreds) && (tens == thousands) );
     return 0;
 }
