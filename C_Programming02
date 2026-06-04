@@ -1,16 +1,8 @@
 #include <stdio.h>
 int main() {
-int a,result;
+int a;
 printf("enter the number");
 scanf("%d",&a);
-if(a!=50)
-{
-    result=1;
-}
-else
-{
-    result=0;
-}
-    printf("result=%d",result);
-    return 0;
+printf("%d",a!=50);
+return 0;
 }
