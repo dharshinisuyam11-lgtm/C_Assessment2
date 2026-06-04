@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+    int a,ones,tens,result;
+    printf("Enter a two-digit number: ");
+    scanf("%d", &a);
+    ones = a % 10;      
+    tens = a/ 10;      
+    if (ones > tens) 
+    {
+       result=1;
+    }
+    else 
+    {
+       result=0;
+    }
+     printf("result=%d",result);
+    return 0;
+}
